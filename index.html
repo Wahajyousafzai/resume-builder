@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+    rel="stylesheet" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- my css -->
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Resume Builder</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+    integrity="sha512-vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body id="full_pdf">
+  <!-- <div id="full_pdf"> -->
+  <span class="form_button"><a href="./form.html"><button id="create_resume" class="create_resume">Create
+        Resume</button></a><button id="download" class="create_resume">Download PDF</button> <button
+      class="create_resume" id="toggleScriptButton">3D Effect</button> <label class="create_resume inp_label"
+      for="input-file">Upload
+      Image</label><input type="file" accept="image/jpeg, image/png image/jpg" class="changeImagesButton"
+      id="input-file" /></span>
+
+
+  <main id="resume" class="testimonial-grid main">
+
+    <div id="tag-to-remove2" class="profile" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+      <button class="removebutton" onclick="removeTag2()">Remove</button>
+      <div id="transformZ">
+        <span class="p_info">
+          <div><img class="profile_img" src="images/channels4_profile.jpg" alt=""></div>
+        </span>
+        <div class="myinfo">
+          <h2 class="name">Muhammad Wahaj</h2>
+          <p id="job" class="position1 position">Frontend Developer</p>
+          <span class="social_icons">
+            <a href="https://www.linkedin.com/in/muhammad-wahaj-khan-swati/"><i
+                class="fa-brands fa-github icon"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-wahaj-khan-swati/"><i
+                class="fa-brands fa-linkedin-in icon"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-wahaj-khan-swati/"><i
+                class="fa-brands fa-youtube icon"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-wahaj-khan-swati/"><i
+                class="fa-brands fa-instagram icon"></i></a>
+          </span>
+        </div>
+      </div>
+      <div class="detail_info">
+        <div class="details">
+          <p>Email:</p>
+          <p id="email">IrealWahaj@gmail.com</p>
+        </div>
+
+        <div class="details">
+          <p>Phone:</p>
+          <p id="phone">03105637</p>
+        </div>
+
+        <div class="details">
+          <p>Gender:</p>
+          <p id="gender">Male</p>
+        </div>
+
+        <div class="details">
+          <p>City:</p>
+          <p id="city">Karachi</p>
+        </div>
+
+        <div class="details">
+          <p>Address:</p>
+          <p id="address">123 Main Street, Long Address Example That Might Wrap</p>
+        </div>
+
+        <div class="details">
+          <p>State:</p>
+          <p id="state">Sindh</p>
+        </div>
+
+        <div class="details">
+          <p>Postal Code:</p>
+          <p id="postalCode">52335</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <article id="tag-to-remove"
+      class="testimonial grid-col-span-2 flow bg-primary-400 quote text-neutral-100 inPosition" data-tilt>
+
+      <button class="removebutton" onclick="removeTag()">Remove</button>
+      <div class="flex box_3">
+        <img class="p_icon" src="./images/channels4_profile.jpg" alt="Wahaj" />
+        <div class="detail">
+          <h2 class="name">Muhammad Wahaj</h2>
+          <p class="position">Frontend Developer</p>
+        </div>
+      </div>
+      <p id="Experience"><i class="fa-solid fa-business-time icon"></i>Experience</p>
+      <p id="experience_name" class="experience_name heading">Web Design and Prototype</p>
+      <span id="experience_Years" class="heading">2 Years | </span><span id="experience_institute"
+        class="experience_institute heading"> Tech Ride</span>
+      <blockquote id="experience" class="para_text">
+        “ Work in this company dedicating the best responsibility in the area that
+        corresponds, delivering the best results for the company and improving
+        productivity. ”
+      </blockquote>
+    </article>
+
+
+    <article id="tag-to-remove3" class="testimonial flow bg-secondary-400 text-neutral-100 inPosition" data-tilt>
+      <button class="removebutton" onclick="removeTag3()">Remove</button>
+      <div class="flex box_2">
+        <div class="p_container">
+          <img class="p_icon" src="./images/channels4_profile.jpg" alt="Wahaj" />
+        </div>
+        <div class="detail">
+          <h2 class="name">Muhammad Wahaj</h2>
+          <p class="position">Frontend Developer</p>
+        </div>
+      </div>
+      <section id="skills-section">
+        <p id="skills"><i class="fa-regular fa-lightbulb icon"></i>Skills</p>
+        <ul id="skills-list" class="skill_list para_text">
+          <li>Html</li>
+          <li>Css</li>
+          <li>TailWindCss</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>NextJs</li>
+        </ul>
+      </section>
+    </article>
+
+    <article id="tag-to-remove4" class="testimonial flow bg-neutral-100 text-secondary-400 inPosition" data-tilt>
+      <button class="removebutton" onclick="removeTag4()">Remove</button>
+      <div class="flex">
+        <div class="p_container">
+          <img class="p_icon" src="./images/channels4_profile.jpg" alt="Wahaj" />
+        </div>
+        <div class="detail">
+          <h2 class="name">Muhammad Wahaj</h2>
+          <p class="position">Frontend Developer</p>
+        </div>
+      </div>
+      <p id="certificates"><i class="fa-solid fa-award icon"></i>Certificates</p>
+      <p id="certificates_name" class="certificates_name">Master Design</p>(<span id="certificates_date"
+        class="certificates_date">2021</span>)
+      <blockquote id="certificates_para" class="para_text">
+        “ For meeting the expectations of leading the team to work the specified tasks. ”
+      </blockquote>
+    </article>
+
+    <article id="tag-to-remove5" class="final testimonial flow bg-neutral-100 text-secondary-400 inPosition" data-tilt>
+      <button class="removebutton" onclick="removeTag5()">Remove</button>
+      <div class="flex">
+        <div class="p_container">
+          <img class="p_icon" src="./images/channels4_profile.jpg" alt="Ahmed" />
+        </div>
+        <div class="detail">
+          <p class="name">Muhammad Wahaj</p>
+          <p class="position">Frontend Developer</p>
+        </div>
+      </div>
+      <p id="education"><i class="fa-solid fa-user-graduate icon"></i>Education</p>
+      <p id="edu_degree" class="education_name para_text">Bsc</p>
+      <span id="edu_institute" class="education_institute para_text">Tech University</span><span class="para_text" id="education_date">From 2015
+        To
+        2017</span>
+    </article>
+  </main>
+  <!-- </div> -->
+</body>
+
+<script src="html2pdf.bundle.min.js"></script>
+<script src="dist/index.js"></script>
+
+</html>

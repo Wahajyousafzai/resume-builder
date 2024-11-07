@@ -1,0 +1,163 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+background: #159957;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  font-size: 1.8rem;
+  color: #0072ff;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #f0f4f8;
+}
+.experience_heading{
+  display: block;
+  font-size: 1.2rem;
+
+}
+label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  height: 45px;
+  margin-top: 8px;
+  padding: 0 15px;
+  font-size: 0.95rem;
+  color: #0072ff;
+  /* background-color: #f0f4f8; */
+  border: 1px solid #d3e0ea;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #00c6ff;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 198, 255, 0.2);
+}
+
+.column {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gender-box h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0072ff;
+  margin-bottom: 8px;
+}
+
+
+.gender label {
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.gender input[type="radio"] {
+  accent-color: rgb(0, 136, 255);
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  select {
+    width: 100%;
+  }
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }

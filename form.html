@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/form.css">
+  <title>Form Page</title>
+  <script src="dist/form.js" defer></script>
+</head>
+
+<body>
+  <form id="userForm">
+    <!-- Name  and  Job -->
+    <div>
+      <h2>Personal Info</h2>
+      <label for="name">Name:</label>
+      <input placeholder="Name" type="text" id="name" name="name" required>
+
+      <label for="job">Role:</label>
+      <input placeholder="Frontend Developer" type="text" id="job" name="job" required>
+    </div>
+
+    <div class="input-box">
+      <label>Email Address</label>
+      <input id="email" type="text" placeholder="Enter email address" required />
+    </div>
+    <div class="column">
+      <div class="input-box">
+        <label>Phone Number</label>
+        <input id="phone" type="number" placeholder="Enter phone number" required />
+      </div>
+      <div>
+        <h3>Gender</h3>
+        <div class="gender">
+          <label>male</label>
+          <input type="radio" id="gender" name="check" value="male" checked />
+        </div>
+        <div class="gender">
+          <label>Female</label>
+          <input type="radio" id="gender" name="check" value="female" />
+        </div>
+      </div>
+
+<!-- Address -->
+      <div class="input-box address">
+        <h2>Address</h2>
+        <input id="state" type="text" placeholder="Enter your State" required />
+
+        <input id="address" type="text" placeholder="Enter street address" required>
+
+        <input id="city" type="text" placeholder="Enter your city" required />
+
+        <input id="postalCode" type="number" placeholder="Enter postal code" />
+
+      </div>
+
+      <div>
+      <!-- social media links -->
+      <label for="github">GitHub:</label>
+      <input type="url" id="github" name="github" placeholder="Enter GitHub URL">
+      
+      <label for="linkedin">LinkedIn:</label>
+      <input type="url" id="linkedin" name="linkedin" placeholder="Enter LinkedIn URL">
+  
+      <label for="youtube">LinkedIn:</label>
+      <input type="url" id="youtube" name="youtube" placeholder="Enter LinkedIn URL">
+
+  
+      <label for="instagram">LinkedIn:</label>
+      <input type="url" id="instagram" name="instagram" placeholder="Enter LinkedIn URL">
+  
+      <!-- <button type="button" onclick="updateSocialLinks()">Update Links</button> -->
+    </div>
+
+
+      <!-- Experience -->
+      <div>
+        <h2 class="experience_heading">Experience</h2>
+        <label for="experience_name"></label>
+        <input type="text" id="experience_name" placeholder="Role Name" name="experience_name">
+        <input type="text" id="experience_Years" placeholder="Duration" name="experience_Years">
+        <input type="text" id="experience_institute" placeholder="Company" name="experience_institute">
+        <input type="text" id="experience" placeholder="About Your Experience" name="experience">
+      </div>
+
+      <!-- Certificates -->
+      <div>
+        <h2>Certificates</h2>
+        <input type="text" id="certificates_name" placeholder="Title" name="certificates_name">
+        <input type="date" id="certificates_date" placeholder="Date" name="certificates_date">
+        <input type="text" id="certificates_para" placeholder=" If More Than List Them Here" name="certificates_para">
+      </div>
+
+      <!-- Education -->
+<div>
+      <h2>Education</h2>
+      <input type="text" id="edu_institute" placeholder="Institute" name="edu_institute" required>
+      <input type="text" id="edu_degree" placeholder="Degree" name="edu_degree" required>
+      <input type="date" id="education_date" placeholder="Date" name="education_date" required>
+    </div>
+    <div>
+      <h2>Skills</h2>
+      <label for="skill-input">Add Skill:</label>
+      <input type="text" id="skill-input" placeholder="Enter a skill">
+      <button  type="button" onclick="addSkill()">Add Skill</button>
+    </div>
+      <button class="btn-grad" type="submit">Submit Form</button>
+
+  </form>
+</body>
+
+</html>
