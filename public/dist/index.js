@@ -4,11 +4,11 @@ const opt = {
     filename: "myfile.pdf",
     image: { type: "jpeg", quality: 1 },
     html2canvas: {
-        scale: 5,
-        width: 1000, // Set to a desktop width in pixels
-        windowWidth: 1400 // Window width for capturing
+        scale: 3,
+        width: 1200, // Set to a desktop width in pixels
+        windowWidth: 1600 // Window width for capturing
     },
-    jsPDF: { unit: "px", format: [1000, resume.scrollHeight], orientation: "portrait" },
+    jsPDF: { unit: "px", format: [1200, resume.scrollHeight + 50], orientation: "portrait" },
 };
 const download = document.getElementById("download");
 if (download) {

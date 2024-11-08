@@ -96,6 +96,8 @@ body {
   place-content: center;
   justify-content: space-evenly;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
   min-height: 100vh;
   font-size: larger;
   font-family: var(--ff-primary);
@@ -213,9 +215,8 @@ h3 {
   .testimonial-grid {
     grid-template-areas:
     "one one"
-    "two two"
-    "three three"
-    "four five";
+    "two four"
+    "three five";
   }
 
 }
@@ -225,9 +226,8 @@ h3 {
   .testimonial-grid {
     grid-template-areas:
     "one one"
-    "two two"
-    "three three"
-    "four five";
+    "two four"
+    "three five";
   }
 }
 
@@ -483,4 +483,13 @@ h3 {
 
 .changeImagesButton {
   display: none;
+}
+
+.paddding_0{
+  padding: 0px;
+  margin: 2px;
+  font-size: 17px;
+}
+.skill_font{
+font-size: larger;
 }
