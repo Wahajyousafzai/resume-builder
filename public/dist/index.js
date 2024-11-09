@@ -242,7 +242,7 @@ function shareResume() {
     };
     const encodedData = btoa(JSON.stringify(resumeData));
     const baseUrl = window.location.origin;
-    const shareableUrl = `${baseUrl}/resume-builder/public/index.html?data=${encodedData}`;
+    const shareableUrl = `${baseUrl}/public/index.html?data=${encodedData}`;
     navigator.clipboard.writeText(shareableUrl)
         .then(() => {
         alert('Share link copied to clipboard!');
