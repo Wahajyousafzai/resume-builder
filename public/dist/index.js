@@ -4,7 +4,7 @@ const opt = {
     filename: "myfile.pdf",
     image: { type: "jpeg", quality: 1 },
     html2canvas: {
-        scale: 5,
+        scale: 3,
         width: 1000, // Set to a desktop width in pixels
         windowWidth: 1400 // Window width for capturing
     },
