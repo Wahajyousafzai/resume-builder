@@ -493,3 +493,6 @@ h3 {
 .skill_font{
 font-size: larger;
 }
+#bold{
+  font-weight: 900;
+}

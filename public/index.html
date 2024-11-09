@@ -8,28 +8,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
-    rel="stylesheet" />
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+    rel="stylesheet" />
   <!-- my css -->
   <link rel="stylesheet" href="css/index.css" />
   <title>Resume Builder</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
-    integrity="sha512-vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="icon" href="images/resume.png">
 </head>
 
 <body id="full_pdf">
   <!-- <div id="full_pdf"> -->
-  <span class="form_button"><a href="./form.html"><button id="create_resume" class="create_resume">Create
-        Resume</button></a><button id="download" class="create_resume">Download PDF</button> <button
-      class="create_resume" id="toggleScriptButton">3D Effect</button> <label class="create_resume inp_label"
-      for="input-file">Upload
-      Image</label><input type="file" accept="image/jpeg, image/png image/jpg" class="changeImagesButton"
-      id="input-file" /></span>
+  <span class="form_button">
+    <a href="./form.html"><button id="create_resume" class="create_resume">Create Resume</button></a>
+    <button id="download" class="create_resume">Download PDF</button>
+    <button class="create_resume" id="toggleScriptButton">3D Effect</button>
+    <label class="create_resume inp_label" for="input-file">Upload Image</label>
+    <input type="file" accept="image/jpeg, image/png image/jpg" class="changeImagesButton" id="input-file" />
+    <button  onclick="shareResume()" class="create_resume" id="shareButton">Share Resume</button>
+  </span>
 
 
   <main id="resume" class="testimonial-grid main">
@@ -119,7 +118,7 @@
 
 
     <article id="tag-to-remove3" class="testimonial flow bg-secondary-400 text-neutral-100 inPosition" data-tilt>
-      
+
       <button class="removebutton" onclick="removeTag3()">Remove</button>
       <div class="flex box_2">
         <div class="p_container">
@@ -147,20 +146,21 @@
     <article id="tag-to-remove4" class="testimonial flow bg-neutral-100 text-secondary-400 inPosition" data-tilt>
       <button class="removebutton" onclick="removeTag4()">Remove</button>
       <div class="flex">
-          <img class="p_icon" src="./images/channels4_profile.jpg" alt="Wahaj" />
-          <p id="certificates">Certificate <i class="fa-solid fa-award icon"></i></p>
+        <img class="p_icon" src="./images/channels4_profile.jpg" alt="Wahaj" />
+        <p id="certificates">Certificate <i class="fa-solid fa-award icon"></i></p>
       </div>
 
-      <h3><strong class="certificates_name paddding_0">Certificate</strong></h3>
+      <h3 id="bold" class="paddding_0">Certificate</h3>
 
       <i class="paddding_0">
         Awarded to
       </i>
 
-      <h3 class="paddding_0">Muhammad Wahaj</h3>
+      <h3 id="bold" class="name paddding_0">Muhammad Wahaj</h3>
 
       <blockquote id="certificates_para" class="para_text">
-        “ For outstanding leadership and dedication as a Frontend Developer, meeting and exceeding expectations in leading the team through specified tasks with excellence.”
+        “ For outstanding leadership and dedication as a Frontend Developer, meeting and exceeding expectations in
+        leading the team through specified tasks with excellence.”
       </blockquote>
 
       <p class="certificate_program">
@@ -184,7 +184,8 @@
       </div>
       <p id="education"><i class="fa-solid fa-user-graduate icon"></i>Education</p>
       <p id="edu_degree" class="education_name para_text">Bsc</p>
-      <span id="edu_institute" class="education_institute para_text">Tech University</span><span class="para_text" id="education_date">From 2015
+      <span id="edu_institute" class="education_institute para_text">Tech University</span><span class="para_text"
+        id="education_date">From 2015
         To
         2017</span>
     </article>
